@@ -28,6 +28,7 @@ This document was designed to be a useful, informational asset for those looking
 * [Finding Sensitive Data on Domain SQL Servers using PowerUpSQL](https://blog.netspi.com/finding-sensitive-data-domain-sql-servers-using-powerupsql/)
 * [Sensitive Data Discovery in Email with MailSniper](https://www.youtube.com/watch?v=ZIOw_xfqkKM)
 * [Remotely Searching for Sensitive Files](https://www.fortynorthsecurity.com/remotely-search/)
+* [I Hunt Sysadmins - harmj0y](http://www.harmj0y.net/blog/penetesting/i-hunt-sysadmins/)
 
 ### User Hunting
 * [Hidden Administrative Accounts: BloodHound to the Rescue](https://www.crowdstrike.com/blog/hidden-administrative-accounts-bloodhound-to-the-rescue/)
@@ -51,6 +52,19 @@ This document was designed to be a useful, informational asset for those looking
 ### AppLocker
 * [Enumerating AppLocker Config](https://rastamouse.me/2018/09/enumerating-applocker-config/)
 
+### Azure
+* [I'm in your cloud... reading everyone's email. Hacking Azure AD via Active Directory](https://www.slideshare.net/DirkjanMollema/im-in-your-cloud-reading-everyones-email-hacking-azure-ad-via-active-directory)
+* [Utilizing Azure Services for Red Team Engagements](https://blog.netspi.com/utiilzing-azure-for-red-team-engagements/)
+* [Blue Cloud of Death: Red Teaming Azure](https://speakerdeck.com/tweekfawkes/blue-cloud-of-death-red-teaming-azure-1)
+* [Azure AD Connect for Red Teamers](https://blog.xpnsec.com/azuread-connect-for-redteam/)
+* [Red Teaming Microsoft: Part 1 – Active Directory Leaks via Azure](https://www.blackhillsinfosec.com/red-teaming-microsoft-part-1-active-directory-leaks-via-azure/)
+* [Attacking & Defending the Microsoft Cloud](https://adsecurity.org/wp-content/uploads/2019/08/2019-BlackHat-US-Metcalf-Morowczynski-AttackingAndDefendingTheMicrosoftCloud.pdf)
+
+### Active Directory Federation Services
+* [118 Attacking ADFS Endpoints with PowerShell Karl Fosaaen](https://www.youtube.com/watch?v=oTyLdAUjw30)
+* [Using PowerShell to Identify Federated Domains](https://blog.netspi.com/using-powershell-identify-federated-domains/)
+* [LyncSniper: A tool for penetration testing Skype for Business and Lync deployments](https://github.com/mdsecresearch/LyncSniper)
+* [Troopers 19 - I am AD FS and So Can You](https://www.slideshare.net/DouglasBienstock/troopers-19-i-am-ad-fs-and-so-can-you)
 ------
 
 ## Privilege Escalation
@@ -67,25 +81,37 @@ This document was designed to be a useful, informational asset for those looking
 * [Abusing DNSAdmins privilege for escalation in Active Directory](http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html)
 * [From DNSAdmins to Domain Admin, When DNSAdmins is More than Just DNS Administration](https://adsecurity.org/?p=4064)
 
-### Unconstrained Delegation
+### Kerberos Delegation
+* [Constructing Kerberos Attacks with Delegation Primitives](https://shenaniganslabs.io/media/Constructing%20Kerberos%20Attacks%20with%20Delegation%20Primitives.pdf)
+
+#### Unconstrained Delegation
+* [Active Directory Security Risk #101: Kerberos Unconstrained Delegation (or How Compromise of a Single Server Can Compromise the Domain)](https://adsecurity.org/?p=1667)
 * [Domain Controller Print Server + Unconstrained Kerberos Delegation = Pwned Active Directory Forest](https://adsecurity.org/?p=4056)
 * [Active Directory Security Risk #101: Kerberos Unconstrained Delegation (or How Compromise of a Single Server Can Compromise the Domain)](https://adsecurity.org/?p=1667)
 * [Unconstrained Delegation Permissions](https://blog.stealthbits.com/unconstrained-delegation-permissions/)
 * [Trust? Years to earn, seconds to break](https://labs.mwrinfosecurity.com/blog/trust-years-to-earn-seconds-to-break/)
 * [Hunting in Active Directory: Unconstrained Delegation & Forests Trusts](https://posts.specterops.io/hunting-in-active-directory-unconstrained-delegation-forests-trusts-71f2b33688e1)
+* [Exploiting Unconstrained Delegation](https://www.riccardoancarani.it/exploiting-unconstrained-delegation/)
 
-### Constrained Delegation
+#### Constrained Delegation
 * [Another Word on Delegation](https://www.harmj0y.net/blog/redteaming/another-word-on-delegation/)
 * [From Kekeo to Rubeus](https://www.harmj0y.net/blog/redteaming/from-kekeo-to-rubeus/)
 * [S4U2Pwnage](http://www.harmj0y.net/blog/activedirectory/s4u2pwnage/)
 * [Kerberos Delegation, Spns And More...](https://www.secureauth.com/blog/kerberos-delegation-spns-and-more)
+
+#### Resource-Based Constrained Delegation
 * [Wagging the Dog: Abusing Resource-Based Constrained Delegation to Attack Active Directory](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html)
+* [Kerberos Resource-based Constrained Delegation: Computer Object Take Over](https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/resource-based-constrained-delegation-ad-computer-object-take-over-and-privilged-code-execution)
+* [Resource Based Constrained Delegation](https://blog.stealthbits.com/resource-based-constrained-delegation-abuse/)
+* [A Case Study in Wagging the Dog: Computer Takeover](http://www.harmj0y.net/blog/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)
+* [BloodHound 2.1's New Computer Takeover Attack](https://www.youtube.com/watch?v=RUbADHcBLKg)
 
 ### Insecure Group Policy Object Permission Rights
 * [Abusing GPO Permissions](https://www.harmj0y.net/blog/redteaming/abusing-gpo-permissions/)
 * [A Red Teamer’s Guide to GPOs and OUs](https://wald0.com/?p=179)
 * [File templates for GPO Abuse](https://github.com/rasta-mouse/GPO-Abuse)
 * [GPO Abuse - Part 1](https://rastamouse.me/2019/01/gpo-abuse-part-1/)
+* [SharpGPOAbuse](https://github.com/mwrlabs/SharpGPOAbuse)
 
 ### Insecure ACLs Permission Rights
 * [Exploiting Weak Active Directory Permissions With Powersploit](https://blog.stealthbits.com/exploiting-weak-active-directory-permissions-with-powersploit/)
@@ -129,10 +155,11 @@ This document was designed to be a useful, informational asset for those looking
 * [Abusing Exchange: One API call away from Domain Admin](https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/)
 * [NtlmRelayToEWS](https://github.com/Arno0x/NtlmRelayToEWS)
 
-### NTML Relay
+### LLMNR/NBNS
 * [Pwning with Responder – A Pentester’s Guide](https://www.notsosecure.com/pwning-with-responder-a-pentesters-guide/)
 * [Practical guide to NTLM Relaying in 2017 (A.K.A getting a foothold in under 5 minutes)](https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html)
 * [Relaying credentials everywhere with ntlmrelayx](https://www.fox-it.com/en/insights/blogs/blog/inside-windows-network/)
+* [Beyond LLMNR/NBNS Spoofing – Exploiting Active Directory-Integrated DNS](https://blog.netspi.com/exploiting-adidns/)
 ------
 
 ## Lateral Movement
@@ -158,6 +185,7 @@ This document was designed to be a useful, informational asset for those looking
 * [Password Spraying Windows Active Directory Accounts - Tradecraft Security Weekly #5](https://www.youtube.com/watch?v=xB26QhnL64c)
 * [Attacking Exchange with MailSniper](https://www.blackhillsinfosec.com/attacking-exchange-with-mailsniper/)
 * [A Password Spraying tool for Active Directory Credentials by Jacob Wilkin](https://github.com/SpiderLabs/Spray)
+* [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit)
 
 ### Automated Lateral Movement
 * [GoFetch is a tool to automatically exercise an attack plan generated by the BloodHound application](https://github.com/GoFetchAD/GoFetch)
@@ -175,6 +203,11 @@ This document was designed to be a useful, informational asset for those looking
 ### Endpoint Detection and Response (EDR) Evasion
 * [Red Teaming in the EDR age](https://youtu.be/l8nkXCOYQC4)
 * [Sharp-Suite - Process Argument Spoofing](https://github.com/FuzzySecurity/Sharp-Suite)
+* [Red Team Tactics: Combining Direct System Calls and sRDI to bypass AV/EDR](https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/)
+* [Dechaining Macros and Evading EDR](https://www.countercept.com/blog/dechaining-macros-and-evading-edr/)
+* [Bypass EDR’s memory protection, introduction to hooking](https://medium.com/@fsx30/bypass-edrs-memory-protection-introduction-to-hooking-2efb21acffd6)
+* [Bypassing Cylance and other AVs/EDRs by Unhooking Windows APIs](https://ired.team/offensive-security/defense-evasion/bypassing-cylance-and-other-avs-edrs-by-unhooking-windows-apis)
+* [Silencing Cylance: A Case Study in Modern EDRs](https://www.mdsec.co.uk/2019/03/silencing-cylance-a-case-study-in-modern-edrs/)
 
 ### OPSEC
 * [Modern Defenses and YOU!](https://blog.cobaltstrike.com/2017/10/25/modern-defenses-and-you/)
@@ -196,16 +229,20 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [AMSI: How Windows 10 Plans to Stop Script-Based Attacks](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
 * [AMSI Bypass: Patching Technique](https://www.cyberark.com/threat-research-blog/amsi-bypass-patching-technique/)
 * [Invisi-Shell - Hide your Powershell script in plain sight. Bypass all Powershell security features](https://github.com/OmerYa/Invisi-Shell)
+* [Dynamic Microsoft Office 365 AMSI In Memory Bypass Using VBA](https://secureyourit.co.uk/wp/2019/05/10/dynamic-microsoft-office-365-amsi-in-memory-bypass-using-vba/)
+* [AmsiScanBuffer Bypass - Part 1](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-1/)
+* [AMSI Bypass](https://www.contextis.com/en/blog/amsi-bypass)
 
 ### Loading .NET Assemblies Anti-Malware Scan Interface (AMSI) Bypass
 * [A PoC function to corrupt the g_amsiContext global variable in clr.dll in .NET Framework Early Access build 3694](https://gist.github.com/mattifestation/ef0132ba4ae3cc136914da32a88106b9)
 
 ### AppLocker & Device Guard Bypass
-* [Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts)](https://github.com/LOLBAS-Project/LOLBAS)
+* [Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts)](https://lolbas-project.github.io/)
 
 ### Sysmon Evasion
 * [Subverting Sysmon: Application of a Formalized Security Product Evasion Methodology](https://github.com/mattifestation/BHUSA2018_Sysmon)
 * [sysmon-config-bypass-finder](https://github.com/mkorman90/sysmon-config-bypass-finder)
+* [Shhmon — Silencing Sysmon via Driver Unload](https://posts.specterops.io/shhmon-silencing-sysmon-via-driver-unload-682b5be57650)
 
 ### HoneyTokens Evasion
 * [Forging Trusts for Deception in Active Directory](http://www.labofapenetrationtester.com/2018/10/deploy-deception.html)
@@ -231,6 +268,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Extracting Service Account Passwords With Kerberoasting](https://blog.stealthbits.com/extracting-service-account-passwords-with-kerberoasting/)
 * [Cracking Service Account Passwords with Kerberoasting](https://www.cyberark.com/blog/cracking-service-account-passwords-kerberoasting/)
 * [Kerberoast PW list for cracking passwords with complexity requirements](https://gist.github.com/edermi/f8b143b11dc020b854178d3809cf91b5)
+* [DerbyCon 2019 - Kerberoasting Revisited](https://www.slideshare.net/harmj0y/derbycon-2019-kerberoasting-revisited)
 
 ### Kerberos AP-REP Roasting
 * [Roasting AS-REPs](http://www.harmj0y.net/blog/activedirectory/roasting-as-reps/) 
@@ -247,7 +285,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 ### LLMNR/NBT-NS Poisoning
 * [LLMNR/NBT-NS Poisoning Using Responder](https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/)
 
-### Other
+### Others
 * [Compromising Plain Text Passwords In Active Directory](https://blog.stealthbits.com/compromising-plain-text-passwords-in-active-directory)
 ------
 
@@ -302,11 +340,19 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) - A swiss army knife for pentesting networks
 * [ADACLScanner](https://github.com/canix1/ADACLScanner) - A tool with GUI or command linte used to create reports of access control lists (DACLs) and system access control lists (SACLs) in Active Directory
 * [zBang](https://github.com/cyberark/zBang) - zBang is a risk assessment tool that detects potential privileged account threats
+* [SafetyKatz](https://github.com/GhostPack/SafetyKatz) - SafetyKatz is a combination of slightly modified version of @gentilkiwi's Mimikatz project and @subTee's .NET PE Loader.
+* [SharpDump](https://github.com/GhostPack/SharpDump) - SharpDump is a C# port of PowerSploit's Out-Minidump.ps1 functionality.
 * [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) - A PowerShell Toolkit for Attacking SQL Server
 * [Rubeus](https://github.com/GhostPack/Rubeus) -  Rubeus is a C# toolset for raw Kerberos interaction and abuses
 * [ADRecon](https://github.com/sense-of-security/ADRecon) - A tool which gathers information about the Active Directory and generates a report which can provide a holistic picture of the current state of the target AD environment
 * [Mimikatz](https://github.com/gentilkiwi/mimikatz) - Utility to extract plaintexts passwords, hash, PIN code and kerberos tickets from memory but also perform pass-the-hash, pass-the-ticket or build Golden tickets
 * [Grouper](https://github.com/l0ss/Grouper) - A PowerShell script for helping to find vulnerable settings in AD Group Policy.
+* [Powermad](https://github.com/Kevin-Robertson/Powermad) - PowerShell MachineAccountQuota and DNS exploit tools
+* [RACE](https://github.com/samratashok/RACE) - RACE is a PowerShell module for executing ACL attacks against Windows targets.
+* [DomainPasswordSpray](https://github.com/mdavis332/DomainPasswordSpray) - DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. 
+* [MailSniper](https://github.com/dafthack/MailSniper) - MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.)
+* [LAPSToolkit](https://github.com/leoloobeek/LAPSToolkit) - Tool to audit and attack LAPS environments.
+* [CredDefense](https://github.com/CredDefense/CredDefense) - Credential and Red Teaming Defense for Windows Environments
 
 ## Ebooks
 * [The Dog Whisperer’s Handbook – A Hacker’s Guide to the BloodHound Galaxy](https://www.ernw.de/download/BloodHoundWorkshop/ERNW_DogWhispererHandbook.pdf)
@@ -317,9 +363,18 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [DogWhisperer - BloodHound Cypher Cheat Sheet (v2)](https://github.com/SadProcessor/Cheats/blob/master/DogWhispererV2.md)
 * [PowerView-3.0 tips and tricks](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993)
 * [PowerView-2.0 tips and tricks](https://gist.github.com/HarmJ0y/3328d954607d71362e3c)
+* [BloodhoundAD-Queries](https://github.com/Scoubi/BloodhoundAD-Queries)
+* [Kerberos Attacks Cheat Sheet](https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a)
+* [Bloodhound Cypher Cheatsheet](https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/)
 
 ## Other Resources
 * [Tactics, Techniques and Procedures for Attacking Active Directory BlackHat Asia 2019](https://docs.google.com/presentation/d/1j2nW05H-iRz7-FVTRh-LBXQm6M6YIBQNWa4V7tp99YQ/)
+* [Bloodhound walkthrough. A Tool for Many Tradecrafts](https://www.pentestpartners.com/security-blog/bloodhound-walkthrough-a-tool-for-many-tradecrafts/)
+* [Attack Methods for Gaining Domain Admin Rights in Active Directory](https://adsecurity.org/?p=2362)
+* [PowerShell Is Dead Epic Learnings](https://www.slideshare.net/nettitude_labs/powershellisdeadepiclearningslondon)
+* [Finding Our Path: How We’re Trying to Improve Active Directory Security](https://docs.google.com/presentation/d/1lQHTqXZIDxwaIUnXdO-EdvGp79RzH1rbM4zE45Kki2I/edit#slide=id.g35f391192_00)
+* [SteelCon 2019: Getting Splunky With Kerberos - Ross Bingham and Tom MacDonald](https://www.youtube.com/watch?v=JcFdNAleIk4&feature=youtu.be)
+
 ------
 
 ## Defense & Detection
@@ -331,11 +386,24 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Aorato Skeleton Key Malware Remote DC Scanner](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) - Remotely scans for the existence of the Skeleton Key Malware
 * [Reset the krbtgt account password/keys](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) - This script will enable you to reset the krbtgt account password and related keys while minimizing the likelihood of Kerberos authentication issues being caused by the operation
 * [Reset The KrbTgt Account Password/Keys For RWDCs/RODCs](https://gallery.technet.microsoft.com/Reset-The-KrbTgt-Account-5f45a414)
+* [RiskySPN](https://github.com/cyberark/RiskySPN) - RiskySPNs is a collection of PowerShell scripts focused on detecting and abusing accounts associated with SPNs (Service Principal Name). 
 * [Deploy-Deception](https://github.com/samratashok/Deploy-Deception) -  A PowerShell module to deploy active directory decoy objects
+* [SpoolerScanner](https://github.com/vletoux/SpoolerScanner) - Check if MS-RPRN is remotely available with powershell/c#
 * [dcept](https://github.com/secureworks/dcept) - A tool for deploying and detecting use of Active Directory honeytokens
 * [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - Investigate malicious Windows logon by visualizing and analyzing Windows event log
 * [DCSYNCMonitor](https://github.com/shellster/DCSYNCMonitor) - Monitors for DCSYNC and DCSHADOW attacks and create custom Windows Events for these events
 * [Sigma](https://github.com/Neo23x0/sigma/) - Generic Signature Format for SIEM Systems
+* [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) - System Monitor (Sysmon) is a Windows system service and device driver that, once installed on a system, remains resident across system reboots to monitor and log system activity to the Windows event log.
+* [SysmonSearch](https://github.com/JPCERTCC/SysmonSearch) - Investigate suspicious activity by visualizing Sysmon's event log
+* [ClrGuard](https://github.com/endgameinc/ClrGuard) - ClrGuard is a proof of concept project to explore instrumenting the Common Language Runtime (CLR) for security purposes.
+* [Get-ClrReflection](https://gist.github.com/dezhub/2875fa6dc78083cedeab10abc551cb58) - Detects memory-only CLR (.NET) modules.
+* [Get-InjectedThread](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2) - Get-InjectedThread looks at each running thread to determine if it is the result of memory injection.
+* [SilkETW](https://github.com/fireeye/SilkETW) - SilkETW & SilkService are flexible C# wrappers for ETW, they are meant to abstract away the complexities of ETW and give people a simple interface to perform research and introspection. 
+
+### Sysmon Configuration
+* [sysmon-modular](https://github.com/olafhartong/sysmon-modular) - A Sysmon configuration repository for everybody to customise
+* [sysmon-dfir](https://github.com/MHaggis/sysmon-dfir) - Sources, configuration and how to detect evil things utilizing Microsoft Sysmon.
+* [sysmon-config](https://github.com/SwiftOnSecurity/sysmon-config) - Sysmon configuration file template with default high-quality event tracing
 
 ### Active Directory Security Checks (by Sean Metcalf - @Pyrotek3)
 
@@ -403,6 +471,18 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * Ensure AD admins (aka Domain Admins) protect their credentials by not logging into untrusted systems (workstations).
 * Limit service account rights that are currently DA (or equivalent).
 
+### Important Security Updates
+|CVE|Title|Description|Link|
+|---|-----|-----------|----|
+|CVE-2019-1040|Windows NTLM Tampering Vulnerability|A tampering vulnerability exists in Microsoft Windows when a man-in-the-middle attacker is able to successfully bypass the NTLM MIC (Message Integrity Check) protection, aka 'Windows NTLM Tampering Vulnerability'.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040|
+|CVE-2019-0683|Active Directory Elevation of Privilege Vulnerability|An elevation of privilege vulnerability exists in Active Directory Forest trusts due to a default setting that lets an attacker in the trusting forest request delegation of a TGT for an identity from the trusted forest, aka 'Active Directory Elevation of Privilege Vulnerability'.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0683|
+|CVE-2019-0708|Remote Desktop Services Remote Code Execution Vulnerability|A remote code execution vulnerability exists in Remote Desktop Services formerly known as Terminal Services when an unauthenticated attacker connects to the target system using RDP and sends specially crafted requests, aka 'Remote Desktop Services Remote Code Execution Vulnerability'.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0708|
+|CVE-2018-8581|Microsoft Exchange Server Elevation of Privilege Vulnerability|An elevation of privilege vulnerability exists in Microsoft Exchange Server, aka "Microsoft Exchange Server Elevation of Privilege Vulnerability." This affects Microsoft Exchange Server.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8518|
+|CVE-2017-0143|Windows SMB Remote Code Execution Vulnerability|The SMBv1 server in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607; and Windows Server 2016 allows remote attackers to execute arbitrary code via crafted packets, aka "Windows SMB Remote Code Execution Vulnerability." This vulnerability is different from those described in CVE-2017-0144, CVE-2017-0145, CVE-2017-0146, and CVE-2017-0148.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0143|
+|CVE-2016-0128|Windows SAM and LSAD Downgrade Vulnerability|The SAM and LSAD protocol implementations in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold and 1511 do not properly establish an RPC channel, which allows man-in-the-middle attackers to perform protocol-downgrade attacks and impersonate users by modifying the client-server data stream, aka "Windows SAM and LSAD Downgrade Vulnerability" or "BADLOCK."|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2016-0128|
+|CVE-2014-6324|Vulnerability in Kerberos Could Allow Elevation of Privilege (3011780)|The Kerberos Key Distribution Center (KDC) in Microsoft Windows Server 2003 SP2, Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8, Windows 8.1, and Windows Server 2012 Gold and R2 allows remote authenticated domain users to obtain domain administrator privileges via a forged signature in a ticket, as exploited in the wild in November 2014, aka "Kerberos Checksum Vulnerability."|https://docs.microsoft.com/en-us/security-updates/securitybulletins/2014/ms14-068|
+|CVE-2014-1812|Vulnerability in Group Policy Preferences could allow elevation of privilege|The Group Policy implementation in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8, Windows 8.1, and Windows Server 2012 Gold and R2 does not properly handle distribution of passwords, which allows remote authenticated users to obtain sensitive credential information and consequently gain privileges by leveraging access to the SYSVOL share, as exploited in the wild in May 2014, aka "Group Policy Preferences Password Elevation of Privilege Vulnerability."|https://support.microsoft.com/en-us/help/2962486/ms14-025-vulnerability-in-group-policy-preferences-could-allow-elevati|
+
 ### Detection
 |Attack|Event ID|
 |------|--------|
@@ -425,8 +505,10 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 ### Resources
 * [ASD Strategies to Mitigate Cyber Security Incidents](https://acsc.gov.au/publications/Mitigation_Strategies_2017.pdf)
 * [Reducing the Active Directory Attack Surface](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/reducing-the-active-directory-attack-surface)
-* [Changes to Ticket-Granting Ticket (TGT) Delegation Across Trusts in Windows Server (AskPFEPlat edition)](https://blogs.technet.microsoft.com/askpfeplat/2019/04/11/changes-to-ticket-granting-ticket-tgt-delegation-across-trusts-in-windows-server-askpfeplat-edition/)
+* [Changes to Ticket-Granting Ticket (TGT) Delegation Across Trusts in Windows Server (AskPFEPlat edition)](https://techcommunity.microsoft.com/t5/Premier-Field-Engineering/Changes-to-Ticket-Granting-Ticket-TGT-Delegation-Across-Trusts/ba-p/440283)
+* [ADV190023 | Microsoft Guidance for Enabling LDAP Channel Binding and LDAP Signing](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190023)
 * [Active Directory: Ultimate Reading Collection](https://social.technet.microsoft.com/wiki/contents/articles/20964.active-directory-ultimate-reading-collection.aspx)
+* [Security Hardening Tips and Recommendations](https://social.technet.microsoft.com/wiki/contents/articles/18931.security-hardening-tips-and-recommendations.aspx)
 * [Securing Domain Controllers to Improve Active Directory Security](https://adsecurity.org/?p=3377)
 * [Securing Windows Workstations: Developing a Secure Baseline](https://adsecurity.org/?p=3299)
 * [Implementing Secure Administrative Hosts](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/implementing-secure-administrative-hosts)
@@ -459,6 +541,8 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Talk Transcript BSidesCharm Detecting the Elusive: Active Directory Threat Hunting](https://www.trimarcsecurity.com/single-post/Detecting-the-Elusive-Active-Directory-Threat-Hunting)
 * [Preventing Mimikatz Attacks](https://medium.com/blue-team/preventing-mimikatz-attacks-ed283e7ebdd5)
 * [Understanding "Red Forest" - The 3-Tier ESAE and Alternative Ways to Protect Privileged Credentials](https://www.slideshare.net/QuestSoftware/understanding-red-forest-the-3tier-esae-and-alternative-ways-to-protect-privileged-credentials)
+* [Securing Microsoft Active Directory Federation Server (ADFS)](https://adsecurity.org/?p=3782)
+* [Azure AD and ADFS best practices: Defending against password spray attacks](https://www.microsoft.com/en-us/microsoft-365/blog/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/)
 * [AD Reading: Active Directory Backup and Disaster Recovery](https://adsecurity.org/?p=22)
 * [Ten Process Injection Techniques: A Technical Survey Of Common And Trending Process Injection Techniques](https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process)
 * [Hunting For In-Memory .NET Attacks](https://www.endgame.com/blog/technical-blog/hunting-memory-net-attacks)
@@ -470,6 +554,11 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [How to Go from Responding to Hunting with Sysinternals Sysmon](https://onedrive.live.com/view.aspx?resid=D026B4699190F1E6!2843&ithint=file%2cpptx&app=PowerPoint&authkey=!AMvCRTKB_V1J5ow)
 * [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding)
 * [Threat Mitigation Strategies: Part 2 – Technical Recommendations and Information](http://threatexpress.com/2018/05/threat-mitigation-strategies-technical-recommendations-and-info-part-2/)
+* [Modern Hardening: Lessons Learned on Hardening Applications and Services](https://channel9.msdn.com/Events/Ignite/2015/BRK3486)
+* [ITSP.70.012 Guidance for Hardening Microsoft Windows 10 Enterprise](http://publications.gc.ca/collections/collection_2019/cstc-csec/D97-3-70-12-2019-eng.pdf)
+* [Blue Team Tips](https://www.sneakymonkey.net/2018/06/25/blue-team-tips/)
+* [Active Directory Domain Security Technical Implementation Guide (STIG)](https://www.stigviewer.com/stig/active_directory_domain/)
+* [Active Directory Security Testing Guide - v2.0](https://www.slideshare.net/HuyKha2/adstg-v20-guidance)
 
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
