@@ -288,6 +288,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 
 ### Others
 * [Compromising Plain Text Passwords In Active Directory](https://blog.stealthbits.com/compromising-plain-text-passwords-in-active-directory)
+* [Kerberos Tickets on Linux Red Teams](https://www.fireeye.com/blog/threat-research/2020/04/kerberos-tickets-on-linux-red-teams.html)
 ------
 
 ## Persistence
@@ -367,6 +368,8 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [BloodhoundAD-Queries](https://github.com/Scoubi/BloodhoundAD-Queries)
 * [Kerberos Attacks Cheat Sheet](https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a)
 * [Bloodhound Cypher Cheatsheet](https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/)
+* [Kerberos cheatsheet](https://gist.github.com/knethteo/2fc8af6ea28199fd63a529a73a4176c7)
+* [Active Directory Exploitation Cheat Sheet](https://github.com/Integration-IT/Active-Directory-Exploitation-Cheat-Sheet)
 
 ## Other Resources
 * [Tactics, Techniques and Procedures for Attacking Active Directory BlackHat Asia 2019](https://docs.google.com/presentation/d/1j2nW05H-iRz7-FVTRh-LBXQm6M6YIBQNWa4V7tp99YQ/)
@@ -380,6 +383,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 
 ## Defense & Detection
 ### Tools & Scripts
+* [Invoke-TrimarcADChecks](https://gofile.io/d/IAKDLn) - The Invoke-TrimarcADChecks.ps1 PowerShell script is designed to gather data from a single domain AD forest to performed Active Directory Security Assessment (ADSA).
 * [Create-Tiers in AD](https://github.com/davidprowe/AD_Sec_Tools) - Project Title Active Directory Auto Deployment of Tiers in any environment
 * [SAMRi10](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b)  - Hardening SAM Remote Access in Windows 10/Server 2016
 * [Net Cease](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)  - Hardening Net Session Enumeration
@@ -504,6 +508,8 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 |Password Spraying|4625: An account failed to log on<br>4771: Kerberos pre-authentication failed<br>4648: A logon was attempted using explicit credentials|
 
 ### Resources
+* [Securing Active Directory: Performing an Active Directory Security Review](https://www.hub.trimarcsecurity.com/post/securing-active-directory-performing-an-active-directory-security-review)
+* [ACTIVE DIRECTORY SECURITY ASSESSMENT CHECKLIST](https://www.cert.ssi.gouv.fr/uploads/guide-ad.html)
 * [ASD Strategies to Mitigate Cyber Security Incidents](https://acsc.gov.au/publications/Mitigation_Strategies_2017.pdf)
 * [Reducing the Active Directory Attack Surface](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/reducing-the-active-directory-attack-surface)
 * [Changes to Ticket-Granting Ticket (TGT) Delegation Across Trusts in Windows Server (AskPFEPlat edition)](https://techcommunity.microsoft.com/t5/Premier-Field-Engineering/Changes-to-Ticket-Granting-Ticket-TGT-Delegation-Across-Trusts/ba-p/440283)
@@ -561,6 +567,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Blue Team Tips](https://www.sneakymonkey.net/2018/06/25/blue-team-tips/)
 * [Active Directory Domain Security Technical Implementation Guide (STIG)](https://www.stigviewer.com/stig/active_directory_domain/)
 * [Active Directory Security Testing Guide - v2.0](https://www.slideshare.net/HuyKha2/adstg-v20-guidance)
+* [Best practices for securing Active Directory Federation Services](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/best-practices-securing-ad-fs)
 
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
