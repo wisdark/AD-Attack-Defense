@@ -68,6 +68,11 @@ This document was designed to be a useful, informational asset for those looking
 ------
 
 ## Privilege Escalation
+### Zerologon
+* [Cobalt Strike ZeroLogon-BOF](https://github.com/rsmudge/ZeroLogon-BOF)
+* [CVE-2020-1472 POC](https://github.com/dirkjanm/CVE-2020-1472)
+* [Zerologon: instantly become domain admin by subverting Netlogon cryptography (CVE-2020-1472)](https://www.secura.com/blog/zero-logon)
+
 ### Passwords in SYSVOL & Group Policy Preferences
 * [Finding Passwords in SYSVOL & Exploiting Group Policy Preferences](https://adsecurity.org/?p=2288)
 * [Pentesting in the Real World: Group Policy Pwnage](https://blog.rapid7.com/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/)
@@ -86,7 +91,6 @@ This document was designed to be a useful, informational asset for those looking
 * [No Shells Required - a Walkthrough on Using Impacket and Kerberos to Delegate Your Way to DA](http://blog.redxorblue.com/2019/12/no-shells-required-using-impacket-to.html)
 
 #### Unconstrained Delegation
-* [Active Directory Security Risk #101: Kerberos Unconstrained Delegation (or How Compromise of a Single Server Can Compromise the Domain)](https://adsecurity.org/?p=1667)
 * [Domain Controller Print Server + Unconstrained Kerberos Delegation = Pwned Active Directory Forest](https://adsecurity.org/?p=4056)
 * [Active Directory Security Risk #101: Kerberos Unconstrained Delegation (or How Compromise of a Single Server Can Compromise the Domain)](https://adsecurity.org/?p=1667)
 * [Unconstrained Delegation Permissions](https://blog.stealthbits.com/unconstrained-delegation-permissions/)
@@ -133,6 +137,8 @@ This document was designed to be a useful, informational asset for those looking
 * [Not A Security Boundary: Breaking Forest Trusts](https://posts.specterops.io/not-a-security-boundary-breaking-forest-trusts-cd125829518d)
 * [The Trustpocalypse](http://www.harmj0y.net/blog/redteaming/the-trustpocalypse/)
 * [Pentesting Active Directory Forests](https://www.dropbox.com/s/ilzjtlo0vbyu1u0/Carlos%20Garcia%20-%20Rooted2019%20-%20Pentesting%20Active%20Directory%20Forests%20public.pdf?dl=0)
+* [Security Considerations for Active Directory (AD) Trusts](https://adsecurity.org/?p=282)
+* [Kerberos Golden Tickets are Now More Golden](https://adsecurity.org/?p=1640)
 
 ### DCShadow
 * [Privilege Escalation With DCShadow](https://blog.stealthbits.com/privilege-escalation-with-dcshadow/)
@@ -356,7 +362,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [LAPSToolkit](https://github.com/leoloobeek/LAPSToolkit) - Tool to audit and attack LAPS environments.
 * [CredDefense](https://github.com/CredDefense/CredDefense) - Credential and Red Teaming Defense for Windows Environments
 * [ldapdomaindump](https://github.com/dirkjanm/ldapdomaindump) - Active Directory information dumper via LDAP
-
+* [SpoolSample](https://github.com/leechristensen/SpoolSample/) - PoC tool to coerce Windows hosts authenticate to other machines via the MS-RPRN RPC interface
 
 ## Ebooks
 * [The Dog Whisperer’s Handbook – A Hacker’s Guide to the BloodHound Galaxy](https://www.ernw.de/download/BloodHoundWorkshop/ERNW_DogWhispererHandbook.pdf)
@@ -482,6 +488,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 ### Important Security Updates
 |CVE|Title|Description|Link|
 |---|-----|-----------|----|
+|CVE-2020-1472|Netlogon Elevation of Privilege Vulnerability|An elevation of privilege vulnerability exists when an attacker establishes a vulnerable Netlogon secure channel connection to a domain controller, using the Netlogon Remote Protocol (MS-NRPC). An attacker who successfully exploited the vulnerability could run a specially crafted application on a device on the network.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1472|
 |CVE-2019-1040|Windows NTLM Tampering Vulnerability|A tampering vulnerability exists in Microsoft Windows when a man-in-the-middle attacker is able to successfully bypass the NTLM MIC (Message Integrity Check) protection, aka 'Windows NTLM Tampering Vulnerability'.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040|
 |CVE-2019-0683|Active Directory Elevation of Privilege Vulnerability|An elevation of privilege vulnerability exists in Active Directory Forest trusts due to a default setting that lets an attacker in the trusting forest request delegation of a TGT for an identity from the trusted forest, aka 'Active Directory Elevation of Privilege Vulnerability'.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0683|
 |CVE-2019-0708|Remote Desktop Services Remote Code Execution Vulnerability|A remote code execution vulnerability exists in Remote Desktop Services formerly known as Terminal Services when an unauthenticated attacker connects to the target system using RDP and sends specially crafted requests, aka 'Remote Desktop Services Remote Code Execution Vulnerability'.|https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0708|
@@ -511,6 +518,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 |Password Spraying|4625: An account failed to log on<br>4771: Kerberos pre-authentication failed<br>4648: A logon was attempted using explicit credentials|
 
 ### Resources
+* [How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472](https://support.microsoft.com/en-us/help/4557222/how-to-manage-the-changes-in-netlogon-secure-channel-connections-assoc)
 * [Securing Active Directory: Performing an Active Directory Security Review](https://www.hub.trimarcsecurity.com/post/securing-active-directory-performing-an-active-directory-security-review)
 * [ACTIVE DIRECTORY SECURITY ASSESSMENT CHECKLIST](https://www.cert.ssi.gouv.fr/uploads/guide-ad.html)
 * [ASD Strategies to Mitigate Cyber Security Incidents](https://acsc.gov.au/publications/Mitigation_Strategies_2017.pdf)
