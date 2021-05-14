@@ -36,7 +36,8 @@ This document was designed to be a useful, informational asset for those looking
 * [Gathering AD Data with the Active Directory PowerShell Module](https://adsecurity.org/?p=3719)
 * [Using ActiveDirectory module for Domain Enumeration from PowerShell Constrained Language Mode](http://www.labofapenetrationtester.com/2018/10/domain-enumeration-from-PowerShell-CLM.html)
 * [PowerUpSQL Active Directory Recon Functions](https://github.com/NetSPI/PowerUpSQL/wiki/Active-Directory-Recon-Functions)
-* [Derivative Local Admin](https://www.sixdub.net/?p=591)
+* [Derivative Local Admin](https://medium.com/@sixdub/derivative-local-admin-cdd09445aac8)
+* [Automated Derivative Administrator Search](https://wald0.com/?p=14)
 * [Dumping Active Directory Domain Info – with PowerUpSQL!](https://blog.netspi.com/dumping-active-directory-domain-info-with-powerupsql/)
 * [Local Group Enumeration](https://www.harmj0y.net/blog/redteaming/local-group-enumeration/)
 * [Attack Mapping With Bloodhound](https://blog.stealthbits.com/local-admin-mapping-bloodhound)
@@ -50,15 +51,7 @@ This document was designed to be a useful, informational asset for those looking
 * [RastaMouse LAPS Part 1 & 2](https://rastamouse.me/tags/laps/)
 
 ### AppLocker
-* [Enumerating AppLocker Config](https://rastamouse.me/2018/09/enumerating-applocker-config/)
-
-### Azure
-* [I'm in your cloud... reading everyone's email. Hacking Azure AD via Active Directory](https://www.slideshare.net/DirkjanMollema/im-in-your-cloud-reading-everyones-email-hacking-azure-ad-via-active-directory)
-* [Utilizing Azure Services for Red Team Engagements](https://blog.netspi.com/utiilzing-azure-for-red-team-engagements/)
-* [Blue Cloud of Death: Red Teaming Azure](https://speakerdeck.com/tweekfawkes/blue-cloud-of-death-red-teaming-azure-1)
-* [Azure AD Connect for Red Teamers](https://blog.xpnsec.com/azuread-connect-for-redteam/)
-* [Red Teaming Microsoft: Part 1 – Active Directory Leaks via Azure](https://www.blackhillsinfosec.com/red-teaming-microsoft-part-1-active-directory-leaks-via-azure/)
-* [Attacking & Defending the Microsoft Cloud](https://adsecurity.org/wp-content/uploads/2019/08/2019-BlackHat-US-Metcalf-Morowczynski-AttackingAndDefendingTheMicrosoftCloud.pdf)
+* [Enumerating AppLocker Config](https://rastamouse.me/blog/applocker/)
 
 ### Active Directory Federation Services
 * [118 Attacking ADFS Endpoints with PowerShell Karl Fosaaen](https://www.youtube.com/watch?v=oTyLdAUjw30)
@@ -89,6 +82,7 @@ This document was designed to be a useful, informational asset for those looking
 ### Kerberos Delegation
 * [Constructing Kerberos Attacks with Delegation Primitives](https://shenaniganslabs.io/media/Constructing%20Kerberos%20Attacks%20with%20Delegation%20Primitives.pdf)
 * [No Shells Required - a Walkthrough on Using Impacket and Kerberos to Delegate Your Way to DA](http://blog.redxorblue.com/2019/12/no-shells-required-using-impacket-to.html)
+* [CVE-2020-17049: Kerberos Bronze Bit Attack – Overview](https://blog.netspi.com/cve-2020-17049-kerberos-bronze-bit-overview/)
 
 #### Unconstrained Delegation
 * [Domain Controller Print Server + Unconstrained Kerberos Delegation = Pwned Active Directory Forest](https://adsecurity.org/?p=4056)
@@ -115,7 +109,8 @@ This document was designed to be a useful, informational asset for those looking
 * [Abusing GPO Permissions](https://www.harmj0y.net/blog/redteaming/abusing-gpo-permissions/)
 * [A Red Teamer’s Guide to GPOs and OUs](https://wald0.com/?p=179)
 * [File templates for GPO Abuse](https://github.com/rasta-mouse/GPO-Abuse)
-* [GPO Abuse - Part 1](https://rastamouse.me/2019/01/gpo-abuse-part-1/)
+* [GPO Abuse - Part 1](https://rastamouse.me/blog/gpo-abuse-pt1/)
+* [GPO Abuse - Part 2](https://rastamouse.me/blog/gpo-abuse-pt2/)
 * [SharpGPOAbuse](https://github.com/mwrlabs/SharpGPOAbuse)
 
 ### Insecure ACLs Permission Rights
@@ -162,11 +157,14 @@ This document was designed to be a useful, informational asset for those looking
 * [Abusing Exchange: One API call away from Domain Admin](https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/)
 * [NtlmRelayToEWS](https://github.com/Arno0x/NtlmRelayToEWS)
 
-### LLMNR/NBNS
+### NTLM Relay & LLMNR/NBNS
 * [Pwning with Responder – A Pentester’s Guide](https://www.notsosecure.com/pwning-with-responder-a-pentesters-guide/)
 * [Practical guide to NTLM Relaying in 2017 (A.K.A getting a foothold in under 5 minutes)](https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html)
 * [Relaying credentials everywhere with ntlmrelayx](https://www.fox-it.com/en/insights/blogs/blog/inside-windows-network/)
 * [Beyond LLMNR/NBNS Spoofing – Exploiting Active Directory-Integrated DNS](https://blog.netspi.com/exploiting-adidns/)
+* [Combining NTLM Relaying and Kerberos delegation](https://chryzsh.github.io/relaying-delegation/)
+* [mitm6 – compromising IPv4 networks via IPv6](https://www.fox-it.com/en/news/blog/mitm6-compromising-ipv4-networks-via-ipv6/)
+* [The worst of both worlds: Combining NTLM Relaying and Kerberos delegation](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)
 ------
 
 ## Lateral Movement
@@ -282,7 +280,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 
 ### Windows Credential Manager/Vault
 * [Operational Guidance for Offensive User DPAPI Abuse](https://www.harmj0y.net/blog/redteaming/operational-guidance-for-offensive-user-dpapi-abuse/)
-* [Jumping Network Segregation with RDP](https://rastamouse.me/2017/08/jumping-network-segregation-with-rdp/)
+* [Jumping Network Segregation with RDP](https://rastamouse.me/blog/rdp-jump-boxes/)
 
 ### DCSync
 * [Mimikatz and DCSync and ExtraSids, Oh My](https://www.harmj0y.net/blog/redteaming/mimikatz-and-dcsync-and-extrasids-oh-my/)
@@ -363,6 +361,12 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [CredDefense](https://github.com/CredDefense/CredDefense) - Credential and Red Teaming Defense for Windows Environments
 * [ldapdomaindump](https://github.com/dirkjanm/ldapdomaindump) - Active Directory information dumper via LDAP
 * [SpoolSample](https://github.com/leechristensen/SpoolSample/) - PoC tool to coerce Windows hosts authenticate to other machines via the MS-RPRN RPC interface
+* [adconnectdump](https://github.com/fox-it/adconnectdump) - Azure AD Connect password extraction
+* [o365recon](https://github.com/nyxgeek/o365recon) - Script to retrieve information via O365 with a valid cred
+* [ROADtools](https://github.com/dirkjanm/ROADtools) - ROADtools is a framework to interact with Azure AD. I
+* [Stormspotter](https://github.com/Azure/Stormspotter) - Stormspotter creates an “attack graph” of the resources in an Azure subscription.
+* [AADInternals](https://github.com/Gerenios/AADInternals) - AADInternals is PowerShell module for administering Azure AD and Office 365
+* [MicroBurst: A PowerShell Toolkit for Attacking Azure](https://github.com/NetSPI/MicroBurst) - MicroBurst includes functions and scripts that support Azure Services discovery, weak configuration auditing, and post exploitation actions such as credential dumping. 
 
 ## Ebooks
 * [The Dog Whisperer’s Handbook – A Hacker’s Guide to the BloodHound Galaxy](https://www.ernw.de/download/BloodHoundWorkshop/ERNW_DogWhispererHandbook.pdf)
@@ -386,7 +390,19 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [PowerShell Is Dead Epic Learnings](https://www.slideshare.net/nettitude_labs/powershellisdeadepiclearningslondon)
 * [Finding Our Path: How We’re Trying to Improve Active Directory Security](https://docs.google.com/presentation/d/1lQHTqXZIDxwaIUnXdO-EdvGp79RzH1rbM4zE45Kki2I/edit#slide=id.g35f391192_00)
 * [SteelCon 2019: Getting Splunky With Kerberos - Ross Bingham and Tom MacDonald](https://www.youtube.com/watch?v=JcFdNAleIk4&feature=youtu.be)
+* [AD-security-workshop](https://github.com/wavestone-cdt/AD-security-workshop)
 
+### Azure Active Directory
+* [AZURE AD INTRODUCTION FOR RED TEAMERS](https://www.synacktiv.com/en/publications/azure-ad-introduction-for-red-teamers.html)
+* [I'm in your cloud... reading everyone's email. Hacking Azure AD via Active Directory](https://www.slideshare.net/DirkjanMollema/im-in-your-cloud-reading-everyones-email-hacking-azure-ad-via-active-directory)
+* [Utilizing Azure Services for Red Team Engagements](https://blog.netspi.com/utiilzing-azure-for-red-team-engagements/)
+* [Blue Cloud of Death: Red Teaming Azure](https://speakerdeck.com/tweekfawkes/blue-cloud-of-death-red-teaming-azure-1)
+* [Azure AD Connect for Red Teamers](https://blog.xpnsec.com/azuread-connect-for-redteam/)
+* [Red Teaming Microsoft: Part 1 – Active Directory Leaks via Azure](https://www.blackhillsinfosec.com/red-teaming-microsoft-part-1-active-directory-leaks-via-azure/)
+* [Attacking & Defending the Microsoft Cloud](https://adsecurity.org/wp-content/uploads/2019/08/2019-BlackHat-US-Metcalf-Morowczynski-AttackingAndDefendingTheMicrosoftCloud.pdf)
+* [How to create a backdoor to Azure AD](https://o365blog.com/post/aadbackdoor/)
+* [Azurehound Cypher Cheatsheet](https://hausec.com/2020/11/23/azurehound-cypher-cheatsheet/)
+* [Keys of the kingdom: Playing God as Global Admin](https://o365blog.com/post/admin/)
 ------
 
 ## Defense & Detection
@@ -413,6 +429,10 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Get-InjectedThread](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2) - Get-InjectedThread looks at each running thread to determine if it is the result of memory injection.
 * [SilkETW](https://github.com/fireeye/SilkETW) - SilkETW & SilkService are flexible C# wrappers for ETW, they are meant to abstract away the complexities of ETW and give people a simple interface to perform research and introspection. 
 * [WatchAD](https://github.com/0Kee-Team/WatchAD) - AD Security Intrusion Detection System
+* [Sparrow](https://github.com/cisagov/Sparrow) - Sparrow.ps1 was created by CISA's Cloud Forensics team to help detect possible compromised accounts and applications in the Azure/m365 environment.
+* [DFIR-O365RC](https://github.com/ANSSI-FR/DFIR-O365RC) - The DFIR-O365RC PowerShell module is a set of functions that allow the DFIR analyst to collect logs relevant for Office 365 Business Email Compromise investigations.
+* [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) - Tooling to assist in Azure AD incident response
+* [ADTimeline](https://github.com/ANSSI-FR/ADTimeline) - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
 
 ### Sysmon Configuration
 * [sysmon-modular](https://github.com/olafhartong/sysmon-modular) - A Sysmon configuration repository for everybody to customise
@@ -579,6 +599,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Active Directory Domain Security Technical Implementation Guide (STIG)](https://www.stigviewer.com/stig/active_directory_domain/)
 * [Active Directory Security Testing Guide - v2.0](https://www.slideshare.net/HuyKha2/adstg-v20-guidance)
 * [Best practices for securing Active Directory Federation Services](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/best-practices-securing-ad-fs)
+* [The most common on premises vulnerabilities & misconfigurations](https://s3cur3th1ssh1t.github.io/The-most-common-on-premise-vulnerabilities-and-misconfigurations/)
 
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
