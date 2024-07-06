@@ -1,6 +1,6 @@
 # Active Directory Kill Chain Attack & Defense
 
-<img width="650" src="https://camo.githubusercontent.com/9547d8152e3490a6e5e3da0279faab64340885be/68747470733a2f2f646f63732e6d6963726f736f66742e636f6d2f656e2d75732f616476616e6365642d7468726561742d616e616c79746963732f6d656469612f61747461636b2d6b696c6c2d636861696e2d736d616c6c2e6a7067">
+<img width="650" src="https://camo.githubusercontent.com/e86663235b4690432fc71048a0c53929ac2768171e31f45069a143b89d17b0c3/68747470733a2f2f692e696d6775722e636f6d2f414d5a394d4d352e6a706567">
 
 ## Summary
 This document was designed to be a useful, informational asset for those looking to understand the specific tactics, techniques, and procedures (TTPs) attackers are leveraging to compromise active directory and guidance to mitigation, detection, and prevention. And understand Active Directory Kill Chain Attack and Modern Post Exploitation Adversary Tradecraft Activity.
@@ -24,11 +24,11 @@ This document was designed to be a useful, informational asset for those looking
 
 ### Data Mining
 * [A Data Hunting Overview](https://thevivi.net/2018/05/23/a-data-hunting-overview/)
-* [Push it, Push it Real Good](https://www.harmj0y.net/blog/redteaming/push-it-push-it-real-good/)
+* [Push it, Push it Real Good](https://blog.harmj0y.net/redteaming/push-it-push-it-real-good/)
 * [Finding Sensitive Data on Domain SQL Servers using PowerUpSQL](https://blog.netspi.com/finding-sensitive-data-domain-sql-servers-using-powerupsql/)
 * [Sensitive Data Discovery in Email with MailSniper](https://www.youtube.com/watch?v=ZIOw_xfqkKM)
 * [Remotely Searching for Sensitive Files](https://www.fortynorthsecurity.com/remotely-search/)
-* [I Hunt Sysadmins - harmj0y](http://www.harmj0y.net/blog/penetesting/i-hunt-sysadmins/)
+* [I Hunt Sysadmins - harmj0y](https://blog.harmj0y.net/penetesting/i-hunt-sysadmins/)
 
 ### User Hunting
 * [Hidden Administrative Accounts: BloodHound to the Rescue](https://www.crowdstrike.com/blog/hidden-administrative-accounts-bloodhound-to-the-rescue/)
@@ -39,15 +39,15 @@ This document was designed to be a useful, informational asset for those looking
 * [Derivative Local Admin](https://medium.com/@sixdub/derivative-local-admin-cdd09445aac8)
 * [Automated Derivative Administrator Search](https://wald0.com/?p=14)
 * [Dumping Active Directory Domain Info – with PowerUpSQL!](https://blog.netspi.com/dumping-active-directory-domain-info-with-powerupsql/)
-* [Local Group Enumeration](https://www.harmj0y.net/blog/redteaming/local-group-enumeration/)
+* [Local Group Enumeration](https://blog.harmj0y.net/redteaming/local-group-enumeration/)
 * [Attack Mapping With Bloodhound](https://blog.stealthbits.com/local-admin-mapping-bloodhound)
 * [Situational Awareness](https://pentestlab.blog/2018/05/28/situational-awareness/)
 * [Commands for Domain Network Compromise](https://www.javelin-networks.com/static/5fcc6e84.pdf)
-* [A Pentester’s Guide to Group Scoping](https://www.harmj0y.net/blog/activedirectory/a-pentesters-guide-to-group-scoping/)
+* [A Pentester’s Guide to Group Scoping](https://blog.harmj0y.net/activedirectory/a-pentesters-guide-to-group-scoping/)
 
 ### LAPS
 * [Microsoft LAPS Security & Active Directory LAPS Configuration Recon](https://adsecurity.org/?p=3164)
-* [Running LAPS with PowerView](https://www.harmj0y.net/blog/powershell/running-laps-with-powerview/)
+* [Running LAPS with PowerView](https://blog.harmj0y.net/powershell/running-laps-with-powerview/)
 * [RastaMouse LAPS Part 1 & 2](https://rastamouse.me/tags/laps/)
 
 ### AppLocker
@@ -68,7 +68,8 @@ This document was designed to be a useful, informational asset for those looking
 
 ### Abusing Active Directory Certificate Services
 * [Certified Pre-Owned](https://posts.specterops.io/certified-pre-owned-d95910965cd2)
-
+* [AD CS Domain Escalation](https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/ad-certificates/domain-escalation)
+  
 ### PetitPotam 
 * [PetitPotam](https://github.com/topotam/PetitPotam)
 * [From Stranger to DA // Using PetitPotam to NTLM relay to Domain Administrator](https://blog.truesec.com/2021/08/05/from-stranger-to-da-using-petitpotam-to-ntlm-relay-to-active-directory/)
@@ -105,16 +106,16 @@ This document was designed to be a useful, informational asset for those looking
 * [Exploiting Unconstrained Delegation](https://www.riccardoancarani.it/exploiting-unconstrained-delegation/)
 
 #### Constrained Delegation
-* [Another Word on Delegation](https://www.harmj0y.net/blog/redteaming/another-word-on-delegation/)
-* [From Kekeo to Rubeus](https://www.harmj0y.net/blog/redteaming/from-kekeo-to-rubeus/)
-* [S4U2Pwnage](http://www.harmj0y.net/blog/activedirectory/s4u2pwnage/)
+* [Another Word on Delegation](https://blog.harmj0y.net/redteaming/another-word-on-delegation/)
+* [From Kekeo to Rubeus](https://blog.harmj0y.net/redteaming/from-kekeo-to-rubeus/)
+* [S4U2Pwnage](https://blog.harmj0y.net/activedirectory/s4u2pwnage/)
 * [Kerberos Delegation, Spns And More...](https://www.secureauth.com/blog/kerberos-delegation-spns-and-more)
 
 #### Resource-Based Constrained Delegation
 * [Wagging the Dog: Abusing Resource-Based Constrained Delegation to Attack Active Directory](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html)
 * [Kerberos Resource-based Constrained Delegation: Computer Object Take Over](https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/resource-based-constrained-delegation-ad-computer-object-take-over-and-privilged-code-execution)
 * [Resource Based Constrained Delegation](https://blog.stealthbits.com/resource-based-constrained-delegation-abuse/)
-* [A Case Study in Wagging the Dog: Computer Takeover](http://www.harmj0y.net/blog/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)
+* [A Case Study in Wagging the Dog: Computer Takeover](https://blog.harmj0y.net/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)
 * [BloodHound 2.1's New Computer Takeover Attack](https://www.youtube.com/watch?v=RUbADHcBLKg)
 
 ### Insecure Group Policy Object Permission Rights
@@ -130,19 +131,19 @@ This document was designed to be a useful, informational asset for those looking
 * [Escalating privileges with ACLs in Active Directory
 ](https://blog.fox-it.com/2018/04/26/escalating-privileges-with-acls-in-active-directory/)
 * [Abusing Active Directory Permissions with PowerView
-](http://www.harmj0y.net/blog/redteaming/abusing-active-directory-permissions-with-powerview/)
+](https://blog.harmj0y.net/redteaming/abusing-active-directory-permissions-with-powerview/)
 * [BloodHound 1.3 – The ACL Attack Path Update](https://wald0.com/?p=112)
 * [Scanning for Active Directory Privileges & Privileged Accounts](https://adsecurity.org/?p=3658)
 * [Active Directory Access Control List – Attacks and Defense](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Active-Directory-Access-Control-List-8211-Attacks-and-Defense/ba-p/250315)
 * [aclpwn - Active Directory ACL exploitation with BloodHound](https://www.slideshare.net/DirkjanMollema/aclpwn-active-directory-acl-exploitation-with-bloodhound)
 
 ### Domain Trusts
-* [A Guide to Attacking Domain Trusts](http://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/)
+* [A Guide to Attacking Domain Trusts](https://blog.harmj0y.net/redteaming/a-guide-to-attacking-domain-trusts/)
 * [It's All About Trust – Forging Kerberos Trust Tickets to Spoof Access across Active Directory Trusts](https://adsecurity.org/?p=1588)
 * [Active Directory forest trusts part 1 - How does SID filtering work?](https://dirkjanm.io/active-directory-forest-trusts-part-one-how-does-sid-filtering-work)
 * [The Forest Is Under Control. Taking over the entire Active Directory forest](https://hackmag.com/security/ad-forest/)
 * [Not A Security Boundary: Breaking Forest Trusts](https://posts.specterops.io/not-a-security-boundary-breaking-forest-trusts-cd125829518d)
-* [The Trustpocalypse](http://www.harmj0y.net/blog/redteaming/the-trustpocalypse/)
+* [The Trustpocalypse](https://blog.harmj0y.net/redteaming/the-trustpocalypse/)
 * [Pentesting Active Directory Forests](https://www.dropbox.com/s/ilzjtlo0vbyu1u0/Carlos%20Garcia%20-%20Rooted2019%20-%20Pentesting%20Active%20Directory%20Forests%20public.pdf?dl=0)
 * [Security Considerations for Active Directory (AD) Trusts](https://adsecurity.org/?p=282)
 * [Kerberos Golden Tickets are Now More Golden](https://adsecurity.org/?p=1640)
@@ -338,7 +339,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Attackers Can Now Use Mimikatz to Implant Skeleton Key on Domain Controllers & BackDoor Your Active Directory Forest](https://adsecurity.org/?p=1275)
 
 ### SeEnableDelegationPrivilege
-* [The Most Dangerous User Right You (Probably) Have Never Heard Of](https://www.harmj0y.net/blog/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/)
+* [The Most Dangerous User Right You (Probably) Have Never Heard Of](https://blog.harmj0y.net/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/)
 * [SeEnableDelegationPrivilege Active Directory Backdoor](https://www.youtube.com/watch?v=OiqaO9RHskU)
 
 ### Security Support Provider
@@ -389,6 +390,8 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [ADModule](https://github.com/samratashok/ADModule) - Microsoft signed ActiveDirectory PowerShell module
 * [ImproHound](https://github.com/improsec/ImproHound) - Identify the attack paths in BloodHound breaking your AD tiering
 * [ADExplorerSnapshot.py](https://github.com/c3c/ADExplorerSnapshot.py) - ADExplorerSnapshot.py is an AD Explorer snapshot ingestor for BloodHound.
+* [orpheus](https://github.com/trustedsec/orpheus) - Bypassing Kerberoast Detections with Modified KDC Options and Encryption Types
+* [BackupOperatorToolkit](https://github.com/improsec/BackupOperatorToolkit)
 
 ## Ebooks
 * [The Dog Whisperer’s Handbook – A Hacker’s Guide to the BloodHound Galaxy](https://www.ernw.de/download/BloodHoundWorkshop/ERNW_DogWhispererHandbook.pdf)
@@ -404,6 +407,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Bloodhound Cypher Cheatsheet](https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/)
 * [Kerberos cheatsheet](https://gist.github.com/knethteo/2fc8af6ea28199fd63a529a73a4176c7)
 * [Active Directory Exploitation Cheat Sheet](https://github.com/Integration-IT/Active-Directory-Exploitation-Cheat-Sheet)
+* [Pentesting Active Directory Mindmaps](https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest_ad_dark_2022_11.svg)
 
 ## Other Resources
 * [Tactics, Techniques and Procedures for Attacking Active Directory BlackHat Asia 2019](https://docs.google.com/presentation/d/1j2nW05H-iRz7-FVTRh-LBXQm6M6YIBQNWa4V7tp99YQ/)
@@ -425,6 +429,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [How to create a backdoor to Azure AD](https://o365blog.com/post/aadbackdoor/)
 * [Azurehound Cypher Cheatsheet](https://hausec.com/2020/11/23/azurehound-cypher-cheatsheet/)
 * [Keys of the kingdom: Playing God as Global Admin](https://o365blog.com/post/admin/)
+* [AZURE AD KERBEROS TICKETS: PIVOTING TO THE CLOUD](https://www.trustedsec.com/blog/azure-ad-kerberos-tickets-pivoting-to-the-cloud/)
 ------
 
 ## Defense & Detection
@@ -455,6 +460,9 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [DFIR-O365RC](https://github.com/ANSSI-FR/DFIR-O365RC) - The DFIR-O365RC PowerShell module is a set of functions that allow the DFIR analyst to collect logs relevant for Office 365 Business Email Compromise investigations.
 * [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) - Tooling to assist in Azure AD incident response
 * [ADTimeline](https://github.com/ANSSI-FR/ADTimeline) - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
+* [Locksmith](https://github.com/TrimarcJake/Locksmith) - A small tool built to find and fix common misconfigurations in Active Directory Certificate Services.
+* [FalconHound](https://github.com/FalconForceTeam/FalconHound) - FalconHound is a blue team multi-tool. It allows you to utilize and enhance the power of BloodHound in a more automated fashion. It is designed to be used in conjunction with a SIEM or other log aggregation tool.
+* [PlumHound](https://github.com/PlumHound/PlumHound) - Bloodhound for Blue and Purple Teams.
 
 ### Sysmon Configuration
 * [sysmon-modular](https://github.com/olafhartong/sysmon-modular) - A Sysmon configuration repository for everybody to customise
@@ -560,6 +568,7 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 |Password Spraying|4625: An account failed to log on<br>4771: Kerberos pre-authentication failed<br>4648: A logon was attempted using explicit credentials|
 
 ### Resources
+* [Total Identity Compromise: DART lessons on securing Active Directory](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-dart-lessons-on-securing-active/ba-p/3753391)
 * [How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472](https://support.microsoft.com/en-us/help/4557222/how-to-manage-the-changes-in-netlogon-secure-channel-connections-assoc)
 * [Securing Active Directory: Performing an Active Directory Security Review](https://www.hub.trimarcsecurity.com/post/securing-active-directory-performing-an-active-directory-security-review)
 * [ACTIVE DIRECTORY SECURITY ASSESSMENT CHECKLIST](https://www.cert.ssi.gouv.fr/uploads/guide-ad.html)
@@ -622,7 +631,8 @@ Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.c
 * [Active Directory Security Testing Guide - v2.0](https://www.slideshare.net/HuyKha2/adstg-v20-guidance)
 * [Best practices for securing Active Directory Federation Services](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/best-practices-securing-ad-fs)
 * [The most common on premises vulnerabilities & misconfigurations](https://s3cur3th1ssh1t.github.io/The-most-common-on-premise-vulnerabilities-and-misconfigurations/)
-
+* [Active Directory Certificate Services: Modern Attack Paths, Mitigations, and Hardening](https://mandiant.widen.net/s/ld7gszw89z/active-directory-certificate-services-hardening-mandiant)
+ 
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
